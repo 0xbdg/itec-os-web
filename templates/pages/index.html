@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
+{% load static%}
 
 {% block title %} Home {% endblock %}
+
+{% block navbar %}
+{% include "components/navbar.html" %}
+{% endblock %}
 
 {% block contents %} 
     <p class="text-xl underline">Hello</p>
@@ -17,3 +22,7 @@
         </div>
     </div>
 {% endblock%}
+
+{% block footer %}
+{% include "components/footer.html" %}
+{% endblock %}
