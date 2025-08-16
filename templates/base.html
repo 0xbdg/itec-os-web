@@ -4,12 +4,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'dist/style.css' %}" />
         <script type="module" src="{% static 'dist/main.js'%}"></script>
+        <link rel="icon" type="image/x-icon" href="{% static 'dist/vite.svg'%}" />
         <title>{% block title %}{% endblock %}</title>
     </head>
     <body>
-        {% block navbar %} {% endblock %}
-        {% block contents %} {% endblock %}
+        {% block navbar %}{% endblock %}
+        {% block contents %}{% endblock %}
         {% block footer %}{% endblock%}
     </body>
 </html>

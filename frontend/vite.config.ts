@@ -19,5 +19,8 @@ export default defineConfig({
                 assetFileNames: '[name][extname]'
             }
         },
+
+        minify: 'esbuild',
+        sourcemap: true
     }
 })
